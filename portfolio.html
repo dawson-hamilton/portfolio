@@ -12,31 +12,35 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dawson Hamilton</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-me.html">Contact Me</a>
-                </li>
-            </ul>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-me.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 id="nav-name">Dawson Hamilton</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
 
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8 bg-light text-dark" style="margin: 45px;">
+        <div id="profile-box" class="col-md-8 bg-light text-dark">
 
             <h1>Profile</h1>
             <hr>
@@ -45,17 +49,17 @@
                 <div class="col-md-3" class="div">
                     <button onclick="window.location.href = 'https://dawson-hamilton.github.io/photography-searcher/';"
                         type="button" class="btn btn-info" id="profile-btn"
-                        href="https://dawson-hamilton.github.io/photography-searcher/"
-                        style="width: 200px; height: 50px;">Photography Searcher</button>
-                    <img class="profile-image" src="assets/images/photo-page.png" style="width: 375px; height: 200px;"
+                        href="https://dawson-hamilton.github.io/photography-searcher/">Photography Searcher</button>
+                    <img class="profile-image" src="assets/images/photo-page.png"
                         alt="photography searcher home page screenshot">
                 </div>
+
                 <div class="col-md-3"></div>
+
                 <div class="col-md-3" class="div">
                     <button onclick="window.location.href = 'https://dawson-hamilton.github.io/weather-app/';"
-                        type="button" class="btn btn-info" id="profile-btn" style="width: 200px; height: 50px;">Weather
-                        Dashboard</button>
-                    <img class="profile-image" src="assets/images/weather-page.png" style="width: 375px; height: 200px;"
+                        type="button" class="btn btn-info" id="profile-btn">Weather Dashboard</button>
+                    <img class="profile-image" src="assets/images/weather-page.png"
                         alt="weather dashboard home page screenshot">
                 </div>
             </div>
@@ -66,26 +70,38 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-3" class="div">
                     <button onclick="window.location.href = 'https://dawson-hamilton.github.io/random-password/';"
-                        type="button" class="btn btn-info" id="profile-btn" style="width: 200px; height: 50px;">Random
-                        Password</button>
+                        type="button" class="btn btn-info" id="profile-btn">Random Password</button>
                     <img class="profile-image" src="assets/images/password-page.png"
-                        style="width: 375px; height: 200px;" alt="random password generator home page screenshot">
+                        alt="random password generator home page screenshot">
                 </div>
+
                 <div class=" col-md-3"></div>
+
                 <div class="col-md-3" class="div">
                     <button onclick="window.location.href = 'https://dawson-hamilton.github.io/daily-planner/';"
-                        type="button" class="btn btn-info" id="profile-btn" style="width: 200px; height: 50px;">Daily
-                        Planner</button>
-                    <img class=" profile-image" src="assets/images/planner-page.png"
-                        style="width: 375px; height: 200px;" alt="daily planner home page screenshot">
+                        type="button" class="btn btn-info" id="profile-btn">Daily Planner</button>
+                    <img class="profile-image" src="assets/images/planner-page.png"
+                        alt="daily planner home page screenshot">
                 </div>
             </div>
         </div>
+        <div class="col-md-2"></div>
 
     </div>
+
     <nav class="navbar navbar-dark bg-dark fixed-bottom" style="height: 60px;">
         <p class="navbar-text">Copyright &#169</p>
     </nav>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
