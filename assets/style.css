@@ -19,9 +19,9 @@ body {
 #profile-btn{
     position: absolute;
     top: 60%;
-    left: 11%;
+    /* left: 11%; */
     background-color: blueviolet;
-    width: 350px;
+    width: 375px;
     height: 50px;
 }
 
@@ -40,6 +40,6 @@ body {
     color: white;
 }
 
-#contact-info {
-    /* text-align: center; */
+#contact {
+    margin-bottom: 20px;
 }
